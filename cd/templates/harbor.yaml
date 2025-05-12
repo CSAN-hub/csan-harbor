@@ -18,10 +18,10 @@ spec:
       helm:
         releaseName: harbor-registry
         valueFiles:
-          - $values/values.yaml
-    - repoURL: 'https://github.com/k8s-school/demo-harbor.git'
+          - $gitrepo/values.yaml
+    - repoURL: 'https://github.com/CSAN-hub/csan-harbor.git'
       targetRevision: main
-      ref: values
+      ref: gitrepo
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: harbor

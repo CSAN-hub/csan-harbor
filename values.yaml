@@ -28,7 +28,7 @@ expose:
       secretName: ""
   ingress:
     hosts:
-      core: core.harbor.domain
+      core: csan-demo.fedcloud.fr
     # set to the type of ingress controller if it has specific requirements.
     # leave as `default` for most ingress controllers.
     # set to `gce` if using the GCE ingress controller
@@ -46,6 +46,7 @@ expose:
       ingress.kubernetes.io/proxy-body-size: "0"
       nginx.ingress.kubernetes.io/ssl-redirect: "true"
       nginx.ingress.kubernetes.io/proxy-body-size: "0"
+      cert-manager.io/cluster-issuer: letsencrypt-staging
     # ingress-specific labels
     labels: {}
   clusterIP:
@@ -109,7 +110,7 @@ expose:
 # the IP address of k8s node
 #
 # If Harbor is deployed behind the proxy, set it as the URL of proxy
-externalURL: https://core.harbor.domain
+externalURL: https://csan-demo.fedcloud.fr
 
 # The persistence is enabled by default and a default StorageClass
 # is needed in the k8s cluster to provision volumes dynamically.
