@@ -1,6 +1,12 @@
-Notary
-OpenID
-Métriques et graphes
-TLS
-Proxy vers d'autre repos
-Etude/paramétrage du scan
+* TODO OpenId
+- how to revoke certificates?
+- study openid scope
+- conf backup
+  name: EGI Check-in
+  openID URL: https://aai-demo.egi.eu/auth/realms/egi
+  scope: openid,voperson_id,email,profile,eduperson_entitlement,offline_access
+* Notary
+* Métriques et graphes
+* TLS
+* Proxy vers d'autre repos
+* Etude/paramétrage du scan
