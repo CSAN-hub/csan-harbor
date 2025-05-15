@@ -1,10 +1,11 @@
 * TODO OpenId
+- write documentation!
 - how to revoke certificates?
 - study openid scope
 - conf backup
   name: EGI Check-in
   openID URL: https://aai-demo.egi.eu/auth/realms/egi
-  scope: openid,voperson_id,email,profile,eduperson_entitlement,offline_access
+  scope: openid,voperson_id,email,profile,entitlements,offline_access
 * Notary
 * Métriques et graphes
 * TLS
