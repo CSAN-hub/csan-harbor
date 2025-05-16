@@ -1,5 +1,3 @@
-Here is the documentation in proper Markdown format:
-
 # CSAN-Harbor Integration with EGI Check-in
 
 This document outlines the steps performed to integrate a **CSAN-Harbor** deployment with the **EGI Check-in** AAI platform, hosted on a server provisioned via Scaleway. The goal is to enable federated authentication using EGI AAI for managing CSAN container artifacts in a secure and production-ready environment.
