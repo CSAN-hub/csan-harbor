@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   sparkNamespace: spark
   source:
-    repoURL: https://github.com/CSAN-hub/csan-harbor/cd
+    repoURL: https://github.com/CSAN-hub/csan-harbor
     targetRevision:
       default: nil

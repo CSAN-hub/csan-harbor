@@ -19,7 +19,7 @@ spec:
         releaseName: harbor-registry
         valueFiles:
           - $gitrepo/values.yaml
-    - repoURL: 'https://github.com/CSAN-hub/csan-harbor.git'
+    - repoURL: {{ .Values.spec.source.repoURL }}
       targetRevision: main
       ref: gitrepo
   destination:
