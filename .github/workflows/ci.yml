@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - master
+env:
+  HARBOR_DOMAIN: core.harbor.domain
 jobs:
   main:
     name: Run Harbor demo

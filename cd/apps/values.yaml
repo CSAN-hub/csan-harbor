@@ -6,6 +6,8 @@ e2e:
   # minio-operator, minio-tenant, fink-alert-simulator
   # strimzi, kafka-cluster
   enabled: true
+expose:
+  url: core.harbor.domain
 spec:
   destination:
     server: https://kubernetes.default.svc

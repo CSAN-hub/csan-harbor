@@ -22,6 +22,7 @@ argocd app create harbor-registry --dest-server https://kubernetes.default.svc \
     --repo "$csan_repo" \
     --path cd/apps \
     -p spec.source.targetRevision.default="$CSAN_HARBOR_WORKBRANCH" \
+    -p expose.url="$harbor_domain"
 
 argocd app sync harbor-registry
 
