@@ -1,5 +1,5 @@
 s3:
-  bucket: harbor 
+  bucket: harbor
   endpoint: https://minio.minio:443
 e2e:
   # Install applications required by fink for end-to-end testing:
@@ -12,3 +12,4 @@ spec:
   sparkNamespace: spark
   source:
     repoURL: https://github.com/k8s-school/demo-harbor/cd
+    targetRevision: nil
