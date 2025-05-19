@@ -1,0 +1,24 @@
+{{ if and .Values.e2e.enabled .Values.hdfs.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: clusterissuer
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: clusterissuer
+    app.kubernetes.io/part-of: harbor-registry
+    app.kubernetes.io/component: ingress
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: clusterissuer
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision.default }}
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+{{ end }}
