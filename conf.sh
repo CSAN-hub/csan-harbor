@@ -11,3 +11,6 @@ harbor_domain="csan-demo.fedcloud.fr"
 harbor_username=admin
 harbor_password=Harbor12345
 
+# TODO test latest ciux version
+CIUXCONFIG=${CIUXCONFIG:-"$HOME/.ciux/ciux.sh"}
+
