@@ -12,6 +12,8 @@ DIR=$(cd "$(dirname "$0")"; pwd -P)
 
 ciux ignite -l e2e "$DIR"
 
+. $CIUXCONFIG
+
 argocd login --core
 kubectl config set-context --current --namespace="$argocd_ns"
 
