@@ -21,9 +21,9 @@ spec:
           - $gitrepo/values.yaml
         parameters:
           - name: expose.ingress.hosts.core
-            value: {{ .Values.spec.expose.url }}
+            value: {{ .Values.expose.url }}
           - name: externalURL
-            value: "https://"{{ .Values.spec.expose.url }}
+            value: "https://"{{ .Values.expose.url }}
     - repoURL: {{ .Values.spec.source.repoURL }}
       targetRevision: main
       ref: gitrepo
