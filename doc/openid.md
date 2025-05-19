@@ -89,29 +89,6 @@ Federated authentication was configured in the Harbor UI:
 
 ---
 
-## 7. TODO Configuration Backup
-
-Once the OIDC setup was completed, the Harbor configuration was exported via:
-
-```bash
-docker exec -it harbor-core /bin/bash
-cd /etc/harbor
-cat harbor.yml > /data/backup/harbor-config-$(date +%F).yml
-```
-
-This ensures that the authentication configuration is recoverable.
-
----
-
-## 🔒 TODO Security Considerations
-
-* Use HTTPS with a valid TLS certificate (e.g., via Let's Encrypt)
-* Regularly rotate client secrets associated with the EGI service
-* Audit user access logs via Harbor's built-in logging features
-* Use OIDC Group Claim Mapping to limit access based on entitlements or roles
-
----
-
 ## 📎 Related Links
 
 * [CSAN-Harbor GitHub](https://github.com/CSAN-hub/csan-harbor)

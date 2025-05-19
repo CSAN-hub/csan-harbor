@@ -1,13 +1,19 @@
 * TODO OpenId
-- write documentation!
 - how to revoke certificates?
 - study openid scope
 - conf backup
   name: EGI Check-in
   openID URL: https://aai-demo.egi.eu/auth/realms/egi
   scope: openid,voperson_id,email,profile,entitlements,offline_access
-* Notary
-* Métriques et graphes
-* TLS
-* Proxy vers d'autre repos
-* Etude/paramétrage du scan
+---
+* TODO Study harbor backup
+* TODO 🔒 Security Considerations
+
+** Regularly rotate client secrets associated with the EGI service
+** Audit user access logs via Harbor's built-in logging features
+** Use OIDC Group Claim Mapping to limit access based on entitlements or roles
+
+* TODO Notary
+* TODO Métriques et graphes
+* TODO Proxy vers d'autre repos
+* TODO Etude/paramétrage du scan
