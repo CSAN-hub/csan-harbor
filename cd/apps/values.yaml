@@ -12,4 +12,5 @@ spec:
   sparkNamespace: spark
   source:
     repoURL: https://github.com/k8s-school/demo-harbor/cd
-    targetRevision: nil
+    targetRevision:
+      default: nil
