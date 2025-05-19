@@ -20,7 +20,7 @@ kubectl config set-context --current --namespace="$argocd_ns"
 argocd app create harbor-registry --dest-server https://kubernetes.default.svc \
     --dest-namespace "$argocd_ns" \
     --repo "$csan_repo" \
-    --path cd/apps
+    --path cd/apps \
     -p spec.source.targetRevision.default="$CSAN_HARBOR_WORKBRANCH" \
 
 argocd app sync harbor-registry
